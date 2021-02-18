@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Element</title>
+    <style>
+        .title {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">Son un titulo de la App (fuera del webComponent) con un style diferente al del web Component</h2>
+    <!--Ejemplo de como funciona la etiqueta Fragment en html-->
+    <template>
+        <h2>Hola mundo again con ejemplo de etiqueta template</h2>
+        <div>
+            <p>soy más texto ejemplo de la etiqueta template de la clase leccion 9 de templates</p>
+        </div>
+    </template>
+    <!--Aqui va la nueva etiqueta customizada-->
+    <my-element></my-element>
+    <my-element></my-element>
+    <my-element></my-element>
+    <!--es MUY IMPORTANTE que sea de tipo module, es decir un modulo de javascript-->
+    <script type="module" src="./myElement.js"></script>
+</body>
+</html>

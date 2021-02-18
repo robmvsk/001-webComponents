@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Element</title>
+    <style>
+        .title {
+            color: purple;
+            font-size: x-small;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title">Son un titulo de la App (fuera del webComponent) con un style diferente al del web Component</h2>
+    <!--Ejemplo de como funciona la etiqueta Fragment en html-->
+
+    <!--Aqui va la nueva etiqueta customizada-->
+    <my-element
+        nombre="Soy el nombre del web component"
+        titulo="Soy el titulo del web Component"
+        parrafo="Soy texto fuera del componente y que lo quiero enviar al componente"
+        imgxx="https://avatars3.githubusercontent.com/u/1905708?s=280&v=4/"
+        img="./imgs/logo-web-components.png"
+    >
+    </my-element>
+    <my-element>dos</my-element>
+    <my-element>tres</my-element>
+    <!--es MUY IMPORTANTE que sea de tipo module, es decir un modulo de javascript-->
+    <script type="module" src="./myElement.js"></script>
+</body>
+</html>
