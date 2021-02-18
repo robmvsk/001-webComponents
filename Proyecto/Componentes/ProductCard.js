@@ -58,7 +58,7 @@ class ProductCard extends HTMLElement {
                     position: relative;
                     display: flex;
                     justify-content: center;
-                    width: 45%;
+                    width: 50%;
                     height: 100%;
                     background-color: var(--primary-background);
                 }
@@ -75,29 +75,26 @@ class ProductCard extends HTMLElement {
                     position: relative;
                     top: 5vh;
                     left: -30px;
-                    width: 160%;
+                    width: 100%;
                     height: 90%;
                     transform: rotate(-25deg);
-                }
-                :host-context(container.card) {
-                    display: flex;
-                    flex-wrap: wrap;
                 }
                 .container .details {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
                     width: 50%;  /*Este es el que hace que cambie y se vea bien el texto*/
                     height: 100%;
                     box-sizing: border-box;
                     padding: 40px;
+                    position: relative;
                 }
                 .container .details .nameProduct {
                     margin-bottom: 25px;
                     font-size: 2.5em;
                     line-height: 0.8em;
                     font-weight: 800;
+                    justify-content: center;
+                    align-items: center;
                 }
                 .container .details .nameProduct .model {
                     letter-spacing: 4px;
@@ -132,14 +129,15 @@ class ProductCard extends HTMLElement {
                 }
                 .container .details .sales .price {
                     float: left;
-                    max-width: 0%;
+                    max-width: 70%;  /*para que tome el 70% del area para poner el precio + USD */
                     margin-left: 0%;
                     font-size: 1.8em;
                     font-weight: 800;
                     color: #a2e2cf;
                 }
-                .container .details .sales .buy {                    
+                .container .details .sales .buy {                 
                     float: right;
+                    max-width: 30%;  /*para que tome el 30% del area restante para poner el boton*/
                     padding: 15px 20px;
                     font-size: 0.8em;
                     color: #fff;
