@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components de Terceros</title>
+    <style>
+        .title {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <jelly-switch id="js1"></jelly-switch>
+    <jelly-switch id="js1">
+        <p slot="content-left">No/Yes</p>
+    </jelly-switch>
+    <jelly-switch id="js1">
+        <p slot="content-left">Off/On</p>
+    </jelly-switch>
+
+    <!-- use element -->
+    <horizontal-situation-indicator 
+        heading="45.0" 
+        heading-select="0.0"
+        nav1-bearing="10.0">
+    </horizontal-situation-indicator>
+
+    <horizontal-situation-indicator 
+        heading="45.0" 
+        heading-select="0.0">
+    </horizontal-situation-indicator>
+
+    <horizontal-situation-indicator 
+        heading="45.0" 
+        heading-select="0.0"
+        nav2-course="0.0" 
+        nav2-deviation="0.0" 
+        nav2-to="-1">
+    </horizontal-situation-indicator>
+
+    <auto-check 
+        src="/signup-check/username" 
+        csrf='<%= authenticity_token_for("/signup-check/username") %>'
+    >
+        <input>
+    </auto-check>
+
+    <auto-check src="/signup-check/username">
+        <input>
+        <input 
+            hidden 
+            data-csrf value="<%= authenticity_token_for("/signup-check/username") %>"
+        >
+    </auto-check>
+
+    <script type="module" src ="https://unpkg.com/jelly-switch@0.2.3/lib/index.min.js"></script>
+    <!-- load element library -->
+    <script type="module" src="horizontal-situation-indicator.js"></script>
+    <script type="module" src="./node_modules/@github/auto-check-element/dist/index.js"></script>
+</body>
+</html>
