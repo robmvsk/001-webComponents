@@ -10,9 +10,11 @@ const formatPrice = (price) => {
     const newPrice = new window.Intl.NumberFormat("en-EN", {
         style: "currency",  //estilo tipo moneda
         currency: "USD",    //y la moneda que va a utilizar es USD: Dolar / GBP: Libras esterlinas
-    }).format(price)        //formatea con la inicializacion de la web API, llamada Intl (Internacionalizacion)
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    }).format(price)  //formatea con la inicializacion de la web API, llamada Intl (Internacionalizacion)
 
-    return newPrice;
+    return newPrice.concat(" USD");
 };
 
 export default formatPrice;

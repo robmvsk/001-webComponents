@@ -8,43 +8,85 @@
     <title>Product-card</title>
 </head>
 <body>
-    <product-card
-        marca="Puma"
-        imgsrc="./assets/imgs/nike-blue.png"
-        modelo="Nike Zoom 2020"
-        coleccion="Running Collection"
-        descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
-        precio="2500"
-        textoboton="Buy Now"
-        largo="900"
-    >
-    </product-card>
-    <product-card
-        marca="Nike"
-        imgsrc="./assets/imgs/nike-blue.png"
-        modelo="Nike Boom 2020"
-        coleccion="Trainning Collection"
-        descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
-        precio="2500"
-        textoboton="Sale Now"
-        largo="900"
-    >
-    </product-card>
-    <product-card
-        marca="Adid"
-        imgsrc="./assets/imgs/nike-blue.png"
-        modelo="Nike Zoom 2020"
-        coleccion="Running Collection"
-        descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
-        precio="2500"
-        textoboton="Buy Now"
-        largo="900"
-    >
-    </product-card>
+    <header>
+        <h1>Título de la WEB</h1>      
+    </header>
+    
+    <main>
+        <div class =".limita-size">
+            <product-card
+                marca="Puma"
+                imgsrc="./assets/imgs/puma-casual-x-ray.png"
+                modelo="Puma Casual X-RAY 2"
+                coleccion="Casual Collection"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
+                precio="1999"
+                textoboton="Buy Now"
+                largo="900"
+            >
+            </product-card>
+        
+            <product-card
+                marca="Nike"
+                imgsrc="./assets/imgs/nike-blue.png"
+                modelo="Nike Boom 2020"
+                coleccion="Trainning Collection"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
+                precio="2500"
+                textoboton="Sale Now"
+                largo="900"
+            >
+            </product-card>
+        
+            <product-card
+                marca="Adidas"
+                imgsrc="./assets/imgs/adidas-Tachones_adidas_Futbol_Copa_Sense_plus_FG.png"
+                modelo="Adidas Copa Sense + FG"
+                coleccion="Soccer Collection"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
+                precio="7999"
+                textoboton="Buy Now"
+                largo="900"
+            >
+            </product-card>
+        
+            <product-card
+                marca="Reebok"
+                imgsrc="./assets/imgs/Reebok_Fitness_Nanoflex_Mujer.png"
+                modelo="Reebok Nanoflex Mujer"
+                coleccion="Fitness Collection"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
+                precio="1899"
+                textoboton="Buy Now"
+                largo="900"
+            >
+            </product-card>
+        
+            <product-card
+                marca="Nike"
+                imgsrc="./assets/imgs/Nike_Basquetbol_Kyrie_Flytrap_IV.png"
+                modelo="Nike Kyrie Flytrap IV"
+                coleccion="Basketball Collection"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo congue nisl, vel tincidunt leo mollis tristique. Sed quis condimentum tortor, ut blandit ligula. Mauris mattis euismod sem, eget gravida massa tempor sed. Nulla ullamcorper, nunc ac tincidunt laoreet, dolor."
+                precio="5899"
+                textoboton="Sale Now"
+                largo="900"
+            >
+            </product-card>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+          <articule>
+              Este es un ejemplo de como hacer un web components y las imágenes utilizadas sólo son una forma de ejemplificar como se puede hacer
+          una tareta de producto, son imágenes meramente informativas y no tienen la intención de
+          comercializar ninguno de los productos. Las imagenes corresponden a sus respectivos dueños.
+        </articule>
+          | Made by <a href="https://robmvsk.github.io/001-webComponents/Proyecto/index.html">@robmvsk - Web Components</a>
+        </p>
+    </footer>
+
     <script type="module" src="./src/app.js"></script>
 </body>
-<footer>
-    
-    <a href="https://es.lipsum.com/">referencias</a>
-</footer>
 </html>
