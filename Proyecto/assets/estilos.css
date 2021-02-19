@@ -62,3 +62,7 @@ a:link {
   a:active {
     color: pink;
   }
+
+  .fondo-logo {
+    --primary-background:tomato;
+  }
